@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
     <link rel="stylesheet" href="vendor/fonts/fonts.css">
     <script src="https://kit.fontawesome.com/5c83728065.js" crossorigin="anonymous"></script>
-    <title>Shop</title>
+    <title>Catalog</title>
 </head>
 <body class="root">
   <header class="header center">
@@ -31,52 +31,69 @@
     </div>
   </header>
   <main class="content">
-    <section class="promo">
-      <div class="promo__left">
-        <img class="promo__left-img" src="./images/promo-left-img.png" alt="promo picture">
-      </div>
-      <div class="promo__right">
-        <div class="promo__right-items">
-          <h1 class="promo__right-title">THE BRAND</h1>
-          <p class="promo__right-subtitle">OF LUXERIOUS</p>
-        </div>
-      </div>
-    </section>
-    <section class="catalog center">
-      <div class="catalog__top">
-        <div class="catalog__items">
-          <img class="catalog__item-img" src="./images/for-women.png" alt="WOMEN">
-          <div class="catalog__item-text">
-            <p class="item-text_overtext">30% OFF</p>
-            <h2 class="item-text_title">FOR WOMEN</h2>
-          </div>
-        </div>
-        <div class="catalog__items">
-          <img class="catalog__item-img" src="./images/for-men.png" alt="MEN">
-          <div class="catalog__item-text">
-            <p class="item-text_overtext">HOT DEAL</p>
-            <h2 class="item-text_title">FOR MEN</h2>
-          </div>
-        </div>
-        <div class="catalog__items">
-          <img class="catalog__item-img" src="./images/for-kids.png" alt="KIDS">
-          <div class="catalog__item-text">
-            <p class="item-text_overtext">NEW ARRIVALS</p>
-            <h2 class="item-text_title">FOR KIDS</h2>
-          </div>
-        </div>
-      </div>
-      <div class="catalog__bottom">
-        <img class="catalog__bottom-img" src="./images/ACCESORIES.png" alt="ACCESORIES">
-        <div class="catalog__bottom-text">
-          <p class="bottom-text_overtext">LUXIROUS & TRENDY</p>
-          <h2 class="bottom-text_title">ACCESORIES</h2>
-        </div>
+    <section class="site-info">
+      <div class="site-info__content center">
+        <h2 class="site-info__title">NEW ARRIVALS</h2>
+        <nav class="site-info__navigation">
+          <a class="site-info__navigation-link" href="index.html">HOME</a>
+          <a class="site-info__navigation-link" href="#">MEN</a>
+          <a class="site-info__navigation-link" href="#">NEW ARRIVALS</a>
+        </nav>
       </div>
     </section>
+    <div class="sort center">
+      <div class="sort__filter sort__filter_active">
+        <span class="sort__filter-text">FILTER <svg class="sort__filter-img" width="15" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M.833 10h3.334A.836.836 0 005 9.167a.836.836 0 00-.833-.834H.833A.836.836 0 000 9.167c0 .458.375.833.833.833zM0 .833c0 .459.375.834.833.834h13.334A.836.836 0 0015 .833.836.836 0 0014.167 0H.833A.836.836 0 000 .833zm.833 5h8.334A.836.836 0 0010 5a.836.836 0 00-.833-.833H.833A.836.836 0 000 5c0 .458.375.833.833.833z"
+          fill="currentColor"/></svg>
+        </span>
+        <div class="sort__filter-items">
+          <details class="filter-items_item" open>
+            <summary class="filter-items_item-title">CATEGORY</summary>
+            <ul class="filter-items_item-list">
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Accessories</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Bags</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Denim</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Hoodies & Sweatshirts</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Jackets & Coats</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Polos</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Shirts</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Shoes</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Sweaters & Knits</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">T-Shirts</a></li>
+              <li class="item-list_type"><a class="item-list_type-link" href="#">Tanks</a></li>
+            </ul>
+            <details>
+              <summary class="filter-items_item-title">BRAND</summary>
+            </details>
+            <details>
+              <summary class="filter-items_item-title">DESIGNER</summary>
+            </details>
+          </details>
+        </div>
+      </div>
+      <div class="sort__options">
+        <span class="sort__options-text">TRENDING NOW <svg class="sort__options-img" width="11" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z" fill="#6F6E6E"/></svg>
+        </span>
+        <details class="sort__options-size">
+          <summary class="sort__options-text">
+            SIZE<svg class="sort__options-img" width="11" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z" fill="#6F6E6E"/></svg>
+          </summary>
+          <div class="sort__options-links">
+            <label class="sort__options-link"><input type="checkbox"> XS</label>
+            <label class="sort__options-link"><input type="checkbox"> S</label>
+            <label class="sort__options-link"><input type="checkbox"> M</label>
+            <label class="sort__options-link"><input type="checkbox"> L</label>
+          </div>
+        </details>
+        <span class="sort__options-text">PRICE <svg class="sort__options-img" width="11" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z" fill="#6F6E6E"/></svg>
+        </span>
+      </div>
+    </div>
     <section class="products center">
-      <h2 class="products__title">Fetured Items</h2>
-      <p class="products__subtitle">Shop for items based on what we featured in this week</p>
       <div class="product__cards">
         <div class="product__card">
           <div class="product__card-top">
@@ -98,7 +115,7 @@
         </div>
         <div class="product__card">
           <div class="product__card-top">
-            <img class="product__card-img" src="./images/card2-women.png" alt="women">
+            <img class="product__card-img" src="./images/card7-man.png" alt="man">
             <div class="product__card-link">
               <a class="card-link_item" href="#">
                 <img class="card-link_img" src="./images/card-link-img.svg" alt="корзина">
@@ -152,7 +169,7 @@
         </div>
         <div class="product__card product__card_indent">
           <div class="product__card-top">
-            <img class="product__card-img" src="./images/card5-women.png" alt="women">
+            <img class="product__card-img" src="./images/card8-man.png" alt="man">
             <div class="product__card-link">
               <a class="card-link_item" href="#">
                 <img class="card-link_img" src="./images/card-link-img.svg" alt="корзина">
@@ -170,7 +187,7 @@
         </div>
         <div class="product__card product__card_indent">
           <div class="product__card-top">
-            <img class="product__card-img" src="./images/card6-women.png" alt="women">
+            <img class="product__card-img" src="./images/card9-man.png" alt="man">
             <div class="product__card-link">
               <a class="card-link_item" href="#">
                 <img class="card-link_img" src="./images/card-link-img.svg" alt="корзина">
@@ -186,9 +203,60 @@
             <div class="card-text_price">$52.00</div>
           </div>
         </div>
-      </div>
-      <div class="products__link">
-        <a class="products__link-item" href="product.html">Browse All Product</a>
+        <div class="product__card product__card_indent">
+          <div class="product__card-top">
+            <img class="product__card-img" src="./images/card10-man.png" alt="man">
+            <div class="product__card-link">
+              <a class="card-link_item" href="#">
+                <img class="card-link_img" src="./images/card-link-img.svg" alt="корзина">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <div class="product__card-text">
+            <h3 class="card-text_title">ELLERY X M'O CAPSULE</h3>
+            <p class="card-text_subtitle">
+              Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+            </p>
+            <div class="card-text_price">$52.00</div>
+          </div>
+        </div>
+        <div class="product__card product__card_indent">
+          <div class="product__card-top">
+            <img class="product__card-img" src="./images/card11-man.png" alt="man">
+            <div class="product__card-link">
+              <a class="card-link_item" href="#">
+                <img class="card-link_img" src="./images/card-link-img.svg" alt="корзина">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <div class="product__card-text">
+            <h3 class="card-text_title">ELLERY X M'O CAPSULE</h3>
+            <p class="card-text_subtitle">
+              Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+            </p>
+            <div class="card-text_price">$52.00</div>
+          </div>
+        </div>
+        <div class="product__card product__card_indent">
+          <div class="product__card-top">
+            <img class="product__card-img" src="./images/card12-man.png" alt="man">
+            <div class="product__card-link">
+              <a class="card-link_item" href="#">
+                <img class="card-link_img" src="./images/card-link-img.svg" alt="корзина">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <div class="product__card-text">
+            <h3 class="card-text_title">ELLERY X M'O CAPSULE</h3>
+            <p class="card-text_subtitle">
+              Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+            </p>
+            <div class="card-text_price">$52.00</div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="feature">
