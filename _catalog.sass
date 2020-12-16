@@ -1,0 +1,181 @@
+.site-info
+  height: 148px
+  background-color: #F8F3F4
+
+  &__content
+    display: flex
+    justify-content: space-between
+    height: 100%
+    align-items: center
+
+  &__title
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    color: $colorSelect
+
+  &__navigation
+    display: flex
+
+  &__navigation-link
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+    text-decoration: none
+    display: block
+    align-self: center
+
+  &__navigation-link:hover
+    color: $colorSelect
+
+  &__navigation-link:last-child
+    font-weight: bold
+    color: $colorSelect
+
+  &__navigation-link:not(:last-child)::after
+    content: "/"
+    padding-left: 8px
+    padding-right: 8px
+
+.sort
+  padding-top: 51px
+  display: flex
+  position: relative
+
+  &__filter
+    flex-grow: 1
+    flex-basis: 33.33333%
+    position: absolute
+
+  &__filter_active:hover
+    width: 360px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 16px
+    box-sizing: border-box
+    position: absolute
+    z-index: 1
+    cursor: pointer
+
+  &__filter-text
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+
+  &__filter-img
+    margin-left: 11px
+
+  &__filter_active:hover .sort__filter-text
+    color: #EF5B70
+
+  &__filter-items
+    display: none
+
+  &__filter_active:hover .sort__filter-items
+    display: block
+
+.filter-items_item
+
+  &-title
+    cursor: pointer
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #EF5B70
+    border-left: 5px solid
+    border-bottom: 1px solid #EBEBEB
+    padding: 11px
+    margin: 18px 0
+
+  &-title::-webkit-details-marker
+    display: none
+
+  &-list
+    list-style-type: none
+
+.item-list_type
+  margin-bottom: 11px
+
+  &:last-child
+    margin-bottom: 0
+
+  &-link
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    text-decoration: none
+    margin-left: 14px
+
+.sort__options
+  flex-basis: 66.66666%
+  margin-left: calc(33.33333% + 11px)
+  display: flex
+
+  &-size
+    cursor: pointer
+    position: relative
+
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    margin-right: 27.98px
+
+  &-text:hover
+    cursor: pointer
+    color: #EF5B70
+
+  &-text::-webkit-details-marker
+    display: none
+
+  &-img
+    margin-left: 11px
+
+  &-links
+    display: flex
+    flex-direction: column
+    position: absolute
+    z-index: 1
+    padding: 8px 30px 8px 8px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    top: 20px
+    left: -9px
+
+  &-link
+    margin: 2px 0
+    line-height: 16px
+    color: #6F6E6E
+
+.products-catalog
+  padding-top: 64px
+  margin-bottom: 188px
+
+.items-content__img
+
+.items-content__title
+  font-style: normal
+  font-weight: normal
+  font-size: 19.96px
+  line-height: 24px
+  color: #FBFBFB
+  margin-top: 28px
+  margin-bottom: 16px
+
+.items-content__subtitle
+  font-style: normal
+  font-weight: 300
+  font-size: 13.972px
+  line-height: 17px
+  text-align: center
+  color: #FBFBFB
