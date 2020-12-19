@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="vendor/fonts/fonts.css">
     <script src="https://kit.fontawesome.com/5c83728065.js" crossorigin="anonymous"></script>
-    <title>Product</title>
+    <title>Cart</title>
 </head>
 <body class="root">
   <header class="header center">
@@ -22,7 +22,7 @@
       <a class="header__right-link" href="catalog.html">
         <img class="header__right-img" src="./images/menu.svg" alt="menu">
       </a>
-      <a class="header__right-link" href="#">
+      <a class="header__right-link" href="registration.html">
         <img class="header__right-img" src="./images/account.svg" alt="account">
       </a>
       <a class="header__right-link" href="cart.html">
@@ -34,14 +34,59 @@
     <div class="shopping-item">
       <h2 class="shopping-item__title center">SHOPPING CART</h2>
     </div>
-    <section class="cart center">
+    <div class="cart center">
       <div class="cart-item__left">
-
+        <div class="card card_mb">
+          <img class="card__img" src="./images/card3-man.png" alt="man">
+          <div class="card__content">
+            <h3 class="card__heading">MANGO  PEOPLE  T-SHIRT</h3>
+            <p class="card__text">Price: <span class="card__text-price">$300</span></p>
+            <p class="card__text">Color: Red</p>
+            <p class="card__text">Size: Xl</p>
+            <p class="card__text">Quantity:	<input class="card__text-input" type="number" min="1" max="5" value="2"></p>
+          </div>
+          <button class="card__close" type="button">
+            <svg class="card__close-img" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.245 9l6.285-6.285a1.59 1.59 0 00-2.245-2.25L9 6.752 2.715.466a1.59 1.59 0 00-2.25 2.25L6.752 9 .466 15.285a1.59 1.59 0 002.25 2.25L9 11.248l6.285 6.285a1.591 1.591 0 002.25-2.25L11.244 9z" fill="#575757"/>
+            </svg>
+          </button>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./images/card7-man.png" alt="man">
+          <div class="card__content">
+            <h3 class="card__heading">MANGO  PEOPLE  T-SHIRT</h3>
+            <p class="card__text">Price: <span class="card__text-price">$300</span></p>
+            <p class="card__text">Color: Red</p>
+            <p class="card__text">Size: Xl</p>
+            <p class="card__text">Quantity:	<input class="card__text-input" type="number" min="1" max="5" value="2"></p>
+          </div>
+          <button class="card__close" type="button">
+            <svg class="card__close-img" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.245 9l6.285-6.285a1.59 1.59 0 00-2.245-2.25L9 6.752 2.715.466a1.59 1.59 0 00-2.25 2.25L6.752 9 .466 15.285a1.59 1.59 0 002.25 2.25L9 11.248l6.285 6.285a1.591 1.591 0 002.25-2.25L11.244 9z" fill="#575757"/>
+            </svg>
+          </button>
+        </div>
+        <div class="cart-item__button">
+          <button class="cart-item__button-link">CLEAR SHOPPING CART</button>
+          <button class="cart-item__button-link">CONTINUE SHOPPING</button>
+        </div>
       </div>
       <div class="cart-item__right">
-
+        <h3 class="cart-item__right-title">SHIPPING ADRESS</h3>
+        <form class="right__form" action="#">
+          <input class="right__form-text right__form-text_color" type="text" placeholder="Bangladesh" minlength="3" maxlength="35" required>
+          <input class="right__form-text" type="text" placeholder="State" minlength="3" maxlength="35" required>
+          <input class="right__form-text" type="text" placeholder="Postcode / Zip" minlength="3" maxlength="35" required>
+          <button class="right__form-button">GET A QUOTE</button>
+        </form>
+        <div class="cart-item__right-price">
+          <p class="right-price__top">SUB TOTAL<span class="right-price__top-item">$900</span></p>
+          <p class="right-price__bottom">GRAND TOTAL<span class="right-price__bottom-item">$900</span></p>
+          <div class="right-price__line"></div>
+          <button class="right-price__button">PROCEED TO CHECKOUT</button>
+        </div>
       </div>
-    </section>
+    </div>
     <section class="subscribe">
       <div class="subscribe__item center">
         <div class="subscribe__left">

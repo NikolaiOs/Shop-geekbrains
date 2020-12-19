@@ -1,9 +1,9 @@
 @import _vars.sass
 
 *
-  outline-width: 1px
-  outline-style: solid
-  outline-color: gray
+  // outline-width: 1px
+  // outline-style: solid
+  // outline-color: gray
   margin: 0
   padding: 0
   box-sizing: border-box
@@ -52,6 +52,11 @@
 
   &__right-link:last-child
     margin-right: 0
+
+.header__right-link
+  transition: transform 0.2s
+  &:hover
+    transform: scale(1.2)
 
 .content
 
@@ -215,7 +220,9 @@
   display: flex
   flex-direction: column
   max-width: 360px
-
+  transition: transform 0.2s
+  &:hover
+    transform: scale(1.025)
   &-top
     max-height: 420px
     position: relative
@@ -491,3 +498,7 @@
 /* cart */
 
 @import _cart.sass
+
+/* registration */
+
+@import _registration.sass

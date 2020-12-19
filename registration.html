@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendor/fonts/fonts.css">
+    <script src="https://kit.fontawesome.com/5c83728065.js" crossorigin="anonymous"></script>
+    <title>Registration</title>
+</head>
+<body class="root">
+  <header class="header center">
+    <div class="header__left">
+      <a class="header__left-link" href="index.html">
+        <img class="header__left-img" src="./images/logo.svg" alt="logo">
+      </a>
+      <a class="header__left-link" href="#">
+        <img class="header__left-img" src="./images/search.svg" alt="search">
+      </a>
+    </div>
+    <div class="header__right">
+      <a class="header__right-link" href="catalog.html">
+        <img class="header__right-img" src="./images/menu.svg" alt="menu">
+      </a>
+      <a class="header__right-link" href="registration.html">
+        <img class="header__right-img" src="./images/account.svg" alt="account">
+      </a>
+      <a class="header__right-link" href="cart.html">
+        <img class="header__right-img" src="./images/basket.svg" alt="basket">
+      </a>
+    </div>
+  </header>
+  <main class="content">
+    <div class="shopping-item">
+      <h2 class="shopping-item__title center">REGISTRATION</h2>
+    </div>
+    <div class="registration-content center">
+      <form  class="registration-form" action="#">
+        <h3 class="registration-form__title">Your Name</h3>
+        <input class="registration-form__input" type="text" placeholder="First Name" minlength="5" maxlength="35" required>
+        <input class="registration-form__input registration-form__input_indent" type="text" placeholder="Last Name" minlength="5" maxlength="35" required>
+        <div class="registration-form__radio">
+          <label class="registration-form__radio-gender"><input class="radio-gender__input" type="radio" name="gender" value="male">Male</label>
+          <label class="registration-form__radio-gender"><input class="radio-gender__input radio-gender__input_indent" type="radio" name="gender" value="female" checked>Female</label>
+        </div>
+        <h3 class="registration-form__title">Login details</h3>
+        <input class="registration-form__input" type="text" placeholder="Email" minlength="15" maxlength="35" required>
+        <input class="registration-form__input" type="password" name="password" placeholder="Password" minlength="6" maxlength="35" required>
+        <p class="registration-form__text">
+          Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+        </p>
+        <button class="registration-form__button">JOIN NOW
+          <svg class="registration-form__button-img" width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54.208a.709.709 0 011.003 0l4.25 4.25a.708.708 0 010 1.003l-4.25 4.25a.71.71 0 01-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 010-1.003z" fill="#fff"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.96a.708.708 0 01.708-.709h14.875a.708.708 0 010 1.417H.708A.708.708 0 010 4.959z" fill="#fff"/>
+          </svg>
+        </button>
+      </form>
+      <div class="description">
+        <h3 class="description__title">LOYALTY HAS ITS PERKS</h3>
+        <p  class="description__subtitle">
+          Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+        </p>
+        <p class="description__text">
+          <svg class="description__text-img" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.803 0H18.09a.777.777 0 00-.615.303L7.37 13.283 2.525 7.058a.786.786 0 00-.615-.304H.196a.199.199 0 00-.154.32l6.713 8.624a.78.78 0 001.233 0L19.958.318A.197.197 0 0019.804 0z" fill="#000"/>
+          </svg>
+          15% off welcome offer
+        </p>
+        <p class="description__text">
+          <svg class="description__text-img" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.803 0H18.09a.777.777 0 00-.615.303L7.37 13.283 2.525 7.058a.786.786 0 00-.615-.304H.196a.199.199 0 00-.154.32l6.713 8.624a.78.78 0 001.233 0L19.958.318A.197.197 0 0019.804 0z" fill="#000"/>
+          </svg>
+          Free shipping, returns and exchanges on all orders
+        </p>
+        <p class="description__text">
+          <svg class="description__text-img" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.803 0H18.09a.777.777 0 00-.615.303L7.37 13.283 2.525 7.058a.786.786 0 00-.615-.304H.196a.199.199 0 00-.154.32l6.713 8.624a.78.78 0 001.233 0L19.958.318A.197.197 0 0019.804 0z" fill="#000"/>
+          </svg>
+          $10 off a purchase on your birthday
+        </p>
+        <p class="description__text">
+          <svg class="description__text-img" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.803 0H18.09a.777.777 0 00-.615.303L7.37 13.283 2.525 7.058a.786.786 0 00-.615-.304H.196a.199.199 0 00-.154.32l6.713 8.624a.78.78 0 001.233 0L19.958.318A.197.197 0 0019.804 0z" fill="#000"/>
+          </svg>
+          Early access to products
+        </p>
+        <p class="description__text">
+          <svg class="description__text-img" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.803 0H18.09a.777.777 0 00-.615.303L7.37 13.283 2.525 7.058a.786.786 0 00-.615-.304H.196a.199.199 0 00-.154.32l6.713 8.624a.78.78 0 001.233 0L19.958.318A.197.197 0 0019.804 0z" fill="#000"/>
+          </svg>
+          Exclusive offers & rewards
+        </p>
+      </div>
+    </div>
+    <section class="subscribe">
+      <div class="subscribe__item center">
+        <div class="subscribe__left">
+          <img class="subscribe__left-img" src="./images/Intersect.png" alt="women">
+          <blockquote class="subscribe__left-text">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+          </blockquote>
+        </div>
+        <div class="subscribe__right">
+          <h2 class="subscribe__right-title">SUBSCRIBE</h2>
+          <p class="subscribe__right-subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+          <form class="subscribe__right-form" action="#">
+            <input class="subscribe__right-input" type="email" placeholder="Enter Your Email">
+            <button class="subscribe__right-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__items center">
+      <div class="footer__items-text">
+        &copy; 2021 Brand All Rights Reserved.
+      </div>
+      <div class="footer__items-links">
+        <a class="footer__items-link" target="_blank" href="https://www.facebook.com/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="footer__items-link" target="_blank" href="https://www.instagram.com/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="footer__items-link" target="_blank" href="https://www.pinterest.ru/">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <a class="footer__items-link" target="_blank" href="https://twitter.com/">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
