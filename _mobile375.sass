@@ -35,9 +35,8 @@
     padding-right: 16px
   .catalog__top
     flex-direction: column
-    gap: 32px
   .catalog__items
-    margin: 0
+    margin: 0 0 19px
     height: 247px
   .catalog__bottom
     height: 111px
@@ -48,26 +47,27 @@
   .products__subtitle
     text-align: center
   .product__cards
-    gap: 16px
+    grid-template-columns: repeat(1, auto)
+    column-gap: 16px
+    row-gap: 16px
   .feature__items
     padding: 0 14px
     flex-direction: column
-    gap: 46px
     align-items: center
     padding-top: 48px
     padding-bottom: 81px
   .feature__items-content
-    margin: 0
+    margin: 0 0 48px 0
   .subscribe
     background-position: 25%
   .subscribe__item
     flex-direction: column
-    gap: 59px
     align-items: center
     overflow: hidden
   .footer__items
     flex-direction: column
-    gap: 40px
+  .footer__items-text
+    margin-bottom: 40px
   .card
     max-width: 358px
     height: 188px
@@ -114,6 +114,13 @@
     margin: 0
   .description__text-img
     margin-right: 2px
+  .drop
+    width: 100%
+  .catalog__items:last-child
+    margin: 0
+
+  .drop__box_mobile
+    display: block
 
 @media all and (max-width: 414px)
   .header
@@ -152,9 +159,8 @@
     padding-right: 16px
   .catalog__top
     flex-direction: column
-    gap: 32px
   .catalog__items
-    margin: 0
+    margin: 0 0 19px
     height: 247px
   .catalog__bottom
     height: 111px
@@ -165,26 +171,27 @@
   .products__subtitle
     text-align: center
   .product__cards
-    gap: 16px
+    grid-template-columns: repeat(1, auto)
+    column-gap: 16px
+    row-gap: 16px
   .feature__items
     padding: 0 14px
     flex-direction: column
-    gap: 46px
     align-items: center
     padding-top: 48px
     padding-bottom: 81px
   .feature__items-content
-    margin: 0
+    margin: 0 0 48px 0
   .subscribe
     background-position: 25%
   .subscribe__item
     flex-direction: column
-    gap: 59px
     align-items: center
     overflow: hidden
   .footer__items
     flex-direction: column
-    gap: 40px
+  .footer__items-text
+    margin-bottom: 40px
   .card
     max-width: 358px
     height: 188px
@@ -231,9 +238,16 @@
     margin: 0
   .description__text-img
     margin-right: 2px
+  .drop
+    width: 100%
+.catalog__items:last-child
+  margin: 0
 
-@media all and (max-width: 812px)
+// .drop__box_mobile
+//   display: block
+
+@media all and (max-width: 767px)
   .promo__right-items
     margin-left: 0
   .product__card
-    flex-basis: 249px
+    flex-basis: 237px

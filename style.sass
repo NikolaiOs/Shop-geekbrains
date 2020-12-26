@@ -27,6 +27,7 @@
   display: flex
   justify-content: space-between
   align-items: center
+  position: relative
 
   &__left
     display: flex
@@ -63,6 +64,85 @@
   transition: transform 0.2s
   &:hover
     transform: scale(1.2)
+
+.drop__box_mobile
+  display: none
+
+#switch
+  position: absolute
+  left: -999999999px
+  visibility: hidden
+  &:checked ~ .drop
+    opacity: 1
+    visibility: visible
+
+.drop
+  background: #FFFFFF
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  padding: 37px 32px
+  position: absolute
+  top: 75px
+  right: 0
+  opacity: 0
+  visibility: hidden
+  z-index: 1
+  transition: opacity .4s
+  &__name
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    display: block
+  &__box
+    margin-top: 24px
+  &__heading
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #F16D7F
+    display: block
+    text-decoration: none
+    &:hover
+      color: #d15c6c
+  &__list
+    list-style-type: none
+    margin-top: 12px
+  &__link
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    text-decoration: none
+    display: block
+    padding: 0 0 0 22px
+    margin-bottom: 11px
+    &:hover
+      color: #F16D7F
+
+.drop__link_indent
+  margin-bottom: 0
+
+.drop__heading_mobile
+  font-style: normal
+  font-weight: bold
+  font-size: 14px
+  line-height: 17px
+  color: #000000
+  margin-bottom: 11px
+  display: flex
+  align-items: center
+  justify-content: start
+  &:last-child
+    margin-bottom: 0
+
+.drop__heading_mobile-img
+  background-color: black
+  width: 29px
+  height: 29px
+  margin-right: 4px
 
 .content
 
@@ -218,10 +298,10 @@
     margin: 6px 0 48px
 
 .product__cards
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-  gap: 30px
+  display: grid
+  grid-template-columns: repeat(3, auto)
+  column-gap: 30px
+  row-gap: 30px
 
 .product__card
   display: flex
